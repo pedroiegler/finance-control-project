@@ -9,7 +9,7 @@ export const Container = styled.div`
     border-radius: 5px;
     display: flex;
     justify-content: space-around;
-    padding: 15px 0;
+    padding: 35px 0;
     gap: 10px;
 
     @media (max-width: 750px){
@@ -19,17 +19,21 @@ export const Container = styled.div`
 
 export const InputContent = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
 `;
 
-export const Label = styled.label``;
+export const Label = styled.label`
+    font-size: 14px;
+`;
 
 export const Input = styled.input`
     outline: none;
     border-radius: 5px;
-    padding: 5px 10px;
-    font-size: 15px;
+    padding: 8px;
+    font-size: 14px;
     border: 1px solid #ccc;
+    margin-left: 8px;
 `;
 
 export const RadioGroup = styled.div`
@@ -38,9 +42,8 @@ export const RadioGroup = styled.div`
 
     input{
         margin-left: 20px;
-        margin-right: 5px;
+        margin-right: 6px;
         accent-color: black;
-        margin-top: 0
     }
 `;
 
@@ -49,6 +52,13 @@ export const Button = styled.button`
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 14px;
     color: white;
     background-color: #011375;
+    transition: .1s;
+
+    &:hover {
+        background-color: #001069;
+        transform: scale(1.02);
+    }
 `;

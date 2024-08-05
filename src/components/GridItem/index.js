@@ -19,7 +19,7 @@ const GridItem = ({ item, onDelete }) => {
                 )}
             </C.Td>
             <C.Td alignCenter>
-                <FaTrash onClick={() => onDelete(item.id)} />
+                <FaTrash className="trash-icon" onClick={() => onDelete(item.id)} />
             </C.Td>
         </C.Tr>
     );
